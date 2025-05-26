@@ -40,3 +40,18 @@ Este proyecto permite analizar compras recurrentes utilizando Python y Jupyter N
 
 - Python 3.12.1 o superior
 - Pip 25.1.1
+
+## 🔑 Variables de entorno
+
+Para acceder a los datos en S3 necesitas definir tus credenciales de AWS en un archivo `.env` en la raíz del proyecto. Crea el archivo `.env` con el siguiente contenido:
+
+```
+ACCESS_KEY=tu_access_key
+SECRET_KEY=tu_secret_key
+```
+
+Asegúrate de no compartir este archivo ni subirlo al repositorio.
+
+## ⚡ Descarga automática de datos
+
+El notebook [`notebooks/okuo-assest.ipynb`](notebooks/okuo-assest.ipynb) descarga automáticamente los datos desde S3 usando las variables de entorno configuradas. Antes de ejecutar el notebook, verifica que el archivo `.env` esté correctamente configurado y que las dependencias estén instaladas.
