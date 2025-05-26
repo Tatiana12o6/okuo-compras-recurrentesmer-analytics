@@ -1,0 +1,489 @@
+[33mcommit c57149abfa56667588f8de87351f465ec6561edc[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Tatiana Rodriguez <30380679+Tatiana12o6@users.noreply.github.com>
+Date:   Mon May 26 14:33:24 2025 +0000
+
+    Realizar  comentarios en el código desde S3
+
+[1mdiff --git a/notebooks/okuo-assest.ipynb b/notebooks/okuo-assest.ipynb[m
+[1mindex 53cd2b1..7db22f2 100644[m
+[1m--- a/notebooks/okuo-assest.ipynb[m
+[1m+++ b/notebooks/okuo-assest.ipynb[m
+[36m@@ -5,12 +5,12 @@[m
+    "id": "746dad78",[m
+    "metadata": {},[m
+    "source": [[m
+[31m-    "# Importacion de librerias"[m
+[32m+[m[32m    "# Importar las librerias necesarias para la ejecusión del proyecto"[m
+    ][m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": 14,[m
+[32m+[m[32m   "execution_count": 1,[m
+    "id": "d66df909",[m
+    "metadata": {},[m
+    "outputs": [],[m
+[36m@@ -26,12 +26,12 @@[m
+    "id": "96c0e3a3",[m
+    "metadata": {},[m
+    "source": [[m
+[31m-    "# Descarga de los datos desde un compomente de S3 en AWS"[m
+[32m+[m[32m    "# Descarga los datos desde el componente de S3 en AWS"[m
+    ][m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": 15,[m
+[32m+[m[32m   "execution_count": null,[m
+    "id": "72e8d0a0",[m
+    "metadata": {},[m
+    "outputs": [],[m
+[36m@@ -46,7 +46,7 @@[m
+     "key = 'raw-data/data.csv'\n",[m
+     "local_path = '../data/data.csv'\n",[m
+     "\n",[m
+[31m-    "# Crear carpeta si no existe\n",[m
+[32m+[m[32m    "# Crear carpeta\n",[m
+     "os.makedirs(os.path.dirname(local_path), exist_ok=True)\n",[m
+     "\n",[m
+     "\n",[m
+[36m@@ -68,12 +68,12 @@[m
+    "id": "01a5f8a6",[m
+    "metadata": {},[m
+    "source": [[m
+[31m-    "# Importacion de los datos"[m
+[32m+[m[32m    "# Importar los datos del proyecto"[m
+    ][m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": 16,[m
+[32m+[m[32m   "execution_count": 3,[m
+    "id": "5b77a6e5",[m
+    "metadata": {},[m
+    "outputs": [[m
+[36m@@ -204,7 +204,7 @@[m
+        "9   2014-10-01  6cba0c  PROD-e658d1         1   164.7"[m
+       ][m
+      },[m
+[31m-     "execution_count": 16,[m
+[32m+[m[32m     "execution_count": 3,[m
+      "metadata": {},[m
+      "output_type": "execute_result"[m
+     }[m
+[36m@@ -216,7 +216,7 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": 17,[m
+[32m+[m[32m   "execution_count": 4,[m
+    "id": "2da53dad",[m
+    "metadata": {},[m
+    "outputs": [[m
+[36m@@ -239,7 +239,7 @@[m
+    "id": "56147fd9",[m
+    "metadata": {},[m
+    "source": [[m
+[31m-    "# Paso 1: Identificar ¿cuales son los clientes recurrentes"[m
+[32m+[m[32m    "# Paso 1: Identificar los clientes recurrentes del supermercado"[m
+    ][m
+   },[m
+   {[m
+[36m@@ -261,7 +261,7 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": 18,[m
+[32m+[m[32m   "execution_count": 5,[m
+    "id": "e201ccd0",[m
+    "metadata": {},[m
+    "outputs": [[m
+[36m@@ -370,7 +370,7 @@[m
+        "18  0006ec   2014-12-28                   82"[m
+       ][m
+      },[m
+[31m-     "execution_count": 18,[m
+[32m+[m[32m     "execution_count": 5,[m
+      "metadata": {},[m
+      "output_type": "execute_result"[m
+     }[m
+[36m@@ -402,7 +402,7 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": 19,[m
+[32m+[m[32m   "execution_count": 6,[m
+    "id": "c100ab7e",[m
+    "metadata": {},[m
+    "outputs": [[m
+[36m@@ -443,7 +443,7 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": 20,[m
+[32m+[m[32m   "execution_count": 7,[m
+    "id": "86699d45",[m
+    "metadata": {},[m
+    "outputs": [[m
+[36m@@ -476,7 +476,7 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": 21,[m
+[32m+[m[32m   "execution_count": 8,[m
+    "id": "0a5c6309",[m
+    "metadata": {},[m
+    "outputs": [[m
+[36m@@ -521,12 +521,12 @@[m
+    "id": "099bfbb0",[m
+    "metadata": {},[m
+    "source": [[m
+[31m-    "Revisar las comprar de un cliente"[m
+[32m+[m[32m    "Revisar las compras de un del cliente \"000166\""[m
+    ][m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": 22,[m
+[32m+[m[32m   "execution_count": null,[m
+    "id": "d636aacd",[m
+    "metadata": {},[m
+    "outputs": [[m
+[36m@@ -546,7 +546,7 @@[m
+     "    compras_recurrentes_30d['usuario'] == cliente\n",[m
+     "]\n",[m
+     "\n",[m
+[31m-    "# Mostrar columnas clave del usuario que estoy revisando\n",[m
+[32m+[m[32m    "# Filtrar columnas clave del usuario que estoy revisando\n",[m
+     "print(info_000166[['usuario', 'fecha_compra', 'productos_comprados', 'dif_dias']])"[m
+    ][m
+   },[m
+[36m@@ -557,12 +557,15 @@[m
+    "source": [[m
+     "# Objetivo: Construir una tabla RFM (Recency–Frequency–Monetary): \n",[m
+     "\n",[m
+[31m-    "#Priorizar acciones de marketing, Segmentar de forma objetiva, Diseñar promociones personalizadas"[m
+[32m+[m[32m    "#Técnica de segmentación de clientes que se utiliza para identificar a los clientes más valiosos del supermercado. \n",[m
+[32m+[m[32m    "Recency (R): ¿Qué tan recientemente compró el cliente?\n",[m
+[32m+[m[32m    "Frequency (F): ¿Con qué frecuencia compra el cliente?\n",[m
+[32m+[m[32m    "Monetary (M): ¿Cuánto gasta el cliente en total o en promedio?"[m
+    ][m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": 23,[m
+[32m+[m[32m   "execution_count": null,[m
+    "id": "f39c274f",[m
+    "metadata": {},[m
+    "outputs": [[m
+[36m@@ -587,7 +590,7 @@[m
+    "source": [[m
+     "compras_recurrentes_30d = compras_recurrentes_30d.sort_values(['usuario', 'fecha_compra'])\n",[m
+     "\n",[m
+[31m-    "# 2. Creamos funciones para calcular frecuencia y monto acumulados por usuario hasta cada fecha_compra\n",[m
+[32m+[m[32m    "# 2. Se calcula la frecuencia y montos acumulados por usuario hasta cada fecha_compra\n",[m
+     "def calc_cumulative_counts(df):\n",[m
+     "    return df.groupby('usuario').cumcount() + 1  # frequency acumulado\n",[m
+     "\n",[m
+[36m@@ -597,8 +600,8 @@[m
+     "compras_recurrentes_30d['frequency_dynamic'] = calc_cumulative_counts(compras_recurrentes_30d)\n",[m
+     "compras_recurrentes_30d['monetary_dynamic'] = calc_cumulative_monetary(compras_recurrentes_30d)\n",[m
+     "\n",[m
+[31m-    "# 3. Para recency dinámico: para cada fila, recency es la diferencia en días entre la fecha_compra de esa fila y la última compra previa\n",[m
+[31m-    "# Primero calculamos la última fecha de compra anterior a la actual (shift por usuario)\n",[m
+[32m+[m[32m    "# 3. Para cada fila, recency es la diferencia en días entre la fecha_compra de esa fila y la última compra previa\n",[m
+[32m+[m[32m    "# Calculamos la última fecha de compra anterior a la actual (shift por usuario)\n",[m
+     "compras_recurrentes_30d['last_purchase_prior'] = (\n",[m
+     "    compras_recurrentes_30d\n",[m
+     "    .groupby('usuario')['fecha_compra']\n",[m
+[36m@@ -613,12 +616,10 @@[m
+     "\n",[m
+     "# Nota: La primera compra por usuario tendrá recency_dynamic = NaN (porque no hay compra anterior)\n",[m
+     "\n",[m
+[31m-    "# 4. Puedes llenar ese NaN con algún valor si quieres, por ejemplo 0 o un valor grande (depende de tu análisis)\n",[m
+     "compras_recurrentes_30d['recency_dynamic'] = compras_recurrentes_30d['recency_dynamic'].fillna(0)\n",[m
+     "\n",[m
+[31m-    "# Ahora tienes variables RFM que cambian para cada fila y reflejan el historial acumulado hasta ese momento\n",[m
+[31m-    "print(compras_recurrentes_30d[['usuario', 'fecha_compra', 'frequency_dynamic', 'monetary_dynamic', 'recency_dynamic']].head(10))\n",[m
+[31m-    "\n"[m
+[32m+[m[32m    "# Historial acumulado \n",[m
+[32m+[m[32m    "print(compras_recurrentes_30d[['usuario', 'fecha_compra', 'frequency_dynamic', 'monetary_dynamic', 'recency_dynamic']].head(10))\n"[m
+    ][m
+   },[m
+   {[m
+[36m@@ -626,12 +627,12 @@[m
+    "id": "d3d94c09",[m
+    "metadata": {},[m
+    "source": [[m
+[31m-    "Incorporar la variable mes"[m
+[32m+[m[32m    "Anexar a la base de datos la variable mes"[m
+    ][m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": 24,[m
+[32m+[m[32m   "execution_count": null,[m
+    "id": "70c04713",[m
+    "metadata": {},[m
+    "outputs": [[m
+[36m@@ -669,13 +670,13 @@[m
+     "# Convertir fecha_compra a datetime\n",[m
+     "compras_recurrentes_30d['fecha_compra'] = pd.to_datetime(compras_recurrentes_30d['fecha_compra'])\n",[m
+     "\n",[m
+[31m-    "# Crear columna 'mes' en formato año-mes (ej: 2014-11)\n",[m
+[32m+[m[32m    "# Crear columna 'mes' \n",[m
+     "compras_recurrentes_30d['mes'] = compras_recurrentes_30d['fecha_compra'].dt.month\n",[m
+     "\n",[m
+     "# Verificar resultado\n",[m
+     "print(compras_recurrentes_30d[['usuario', 'fecha_compra', 'mes', 'frequency_dynamic', 'monetary_dynamic', 'recency_dynamic']].head(10))\n",[m
+     "\n",[m
+[31m-    "# Creamos base_enriquecida como copia actualizada\n",[m
+[32m+[m[32m    "# Renombrar la base de datos \n",[m
+     "base_enriquecida = compras_recurrentes_30d.copy()\n"[m
+    ][m
+   },[m
+[36m@@ -697,7 +698,7 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": 25,[m
+[32m+[m[32m   "execution_count": null,[m
+    "id": "f729a4a6",[m
+    "metadata": {},[m
+    "outputs": [[m
+[36m@@ -734,12 +735,13 @@[m
+     "# El evento ocurre si existe fecha_siguiente_compra (1), o está censurado (0) si no hay siguiente compra\n",[m
+     "base_enriquecida['event'] = base_enriquecida['fecha_siguiente_compra'].notnull().astype(int)\n",[m
+     "\n",[m
+[31m-    "# Para la última compra sin siguiente, duration puede ser la diferencia entre fecha_compra y fecha_ref (fecha máxima de observación)\n",[m
+[32m+[m[32m    "# Para la última compra sin siguiente\n",[m
+[32m+[m[32m    "# Duration: diferencia entre fecha_compra y fecha_ref (fecha máxima de observación)\n",[m
+     "fecha_ref = base_enriquecida['fecha_compra'].max()\n",[m
+     "mask_censura = base_enriquecida['event'] == 0\n",[m
+     "base_enriquecida.loc[mask_censura, 'duration'] = (fecha_ref - base_enriquecida.loc[mask_censura, 'fecha_compra']).dt.days\n",[m
+     "\n",[m
+[31m-    "# Opcional: eliminar filas con duración negativa o cero si las hubiera (depende de la calidad de los datos)\n",[m
+[32m+[m[32m    "# Eliminar filas con duración negativa o cero\n",[m
+     "base_enriquecida = base_enriquecida[base_enriquecida['duration'] > 0]\n",[m
+     "\n",[m
+     "print(base_enriquecida[['usuario', 'fecha_compra', 'fecha_siguiente_compra', 'duration', 'event']].head(10))\n"[m
+[36m@@ -747,7 +749,7 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": 26,[m
+[32m+[m[32m   "execution_count": 13,[m
+    "id": "6824431d",[m
+    "metadata": {},[m
+    "outputs": [[m
+[36m@@ -889,7 +891,7 @@[m
+        "45             2014-12-04       7.0      1  "[m
+       ][m
+      },[m
+[31m-     "execution_count": 26,[m
+[32m+[m[32m     "execution_count": 13,[m
+      "metadata": {},[m
+      "output_type": "execute_result"[m
+     }[m
+[36m@@ -908,7 +910,7 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": 27,[m
+[32m+[m[32m   "execution_count": null,[m
+    "id": "467ddd1b",[m
+    "metadata": {},[m
+    "outputs": [[m
+[36m@@ -941,7 +943,7 @@[m
+     }[m
+    ],[m
+    "source": [[m
+[31m-    "# Supongamos que tu base original se llama base_enriquecida\n",[m
+[32m+[m[32m    "# Realizar una copia de la base original \n",[m
+     "base_supervivencia = base_enriquecida.copy()\n",[m
+     "\n",[m
+     "# Confirmar que la copia fue creada\n",[m
+[36m@@ -954,12 +956,12 @@[m
+    "id": "d6d5eac1",[m
+    "metadata": {},[m
+    "source": [[m
+[31m-    "Ajustar el modelo "[m
+[32m+[m[32m    "Ajustar el modelo de supervivencia"[m
+    ][m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": 28,[m
+[32m+[m[32m   "execution_count": 15,[m
+    "id": "5672fad7",[m
+    "metadata": {},[m
+    "outputs": [[m
+[36m@@ -1012,7 +1014,7 @@[m
+        "    </tr>\n",[m
+        "    <tr>\n",[m
+        "      <th>time fit was run</th>\n",[m
+[31m-       "      <td>2025-05-26 08:58:18 UTC</td>\n",[m
+[32m+[m[32m       "      <td>2025-05-26 10:00:54 UTC</td>\n",[m
+        "    </tr>\n",[m
+        "  </tbody>\n",[m
+        "</table>\n",[m
+[36m@@ -1145,7 +1147,7 @@[m
+        "   number of observations = 361232\n",[m
+        "number of events observed = 300111\n",[m
+        "   partial log-likelihood = -3539840.91\n",[m
+[31m-       "         time fit was run = 2025-05-26 08:58:18 UTC\n",[m
+[32m+[m[32m       "         time fit was run = 2025-05-26 10:00:54 UTC\n",[m
+        "\n",[m
+        "---\n",[m
+        "                   coef exp(coef)  se(coef)  coef lower 95%  coef upper 95% exp(coef) lower 95% exp(coef) upper 95%\n",[m
+[36m@@ -1191,7 +1193,7 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": 29,[m
+[32m+[m[32m   "execution_count": 16,[m
+    "id": "bdbe47d2",[m
+    "metadata": {},[m
+    "outputs": [],[m
+[36m@@ -1202,7 +1204,7 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": 30,[m
+[32m+[m[32m   "execution_count": 17,[m
+    "id": "0d7cd82d",[m
+    "metadata": {},[m
+    "outputs": [[m
+[36m@@ -1254,7 +1256,7 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": 31,[m
+[32m+[m[32m   "execution_count": null,[m
+    "id": "875e5687",[m
+    "metadata": {},[m
+    "outputs": [[m
+[36m@@ -1289,10 +1291,7 @@[m
+     }[m
+    ],[m
+    "source": [[m
+[31m-    "# Primero, aseguramos que base_supervivencia tenga las columnas calculadas:\n",[m
+[31m-    "# 'usuario', 'fecha_compra', 'dias_hasta_proxima_compra', 'fecha_proxima_compra'\n",[m
+[31m-    "\n",[m
+[31m-    "# Ordenamos por usuario y fecha_compra descendente para que la primera fila sea la compra más reciente\n",[m
+[32m+[m[32m    "# Ordenamos por usuario y fecha_compra para que la primera fila sea la compra más reciente\n",[m
+     "base_supervivencia = base_supervivencia.sort_values(['usuario', 'fecha_compra'], ascending=[True, False])\n",[m
+     "\n",[m
+     "# Seleccionamos solo la fila más reciente por usuario\n",[m
+[36m@@ -1304,7 +1303,7 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": 32,[m
+[32m+[m[32m   "execution_count": 19,[m
+    "id": "c3aab78b",[m
+    "metadata": {},[m
+    "outputs": [[m
+[36m@@ -1465,7 +1464,7 @@[m
+        "4 2014-11-21 09:03:54.249511645  "[m
+       ][m
+      },[m
+[31m-     "execution_count": 32,[m
+[32m+[m[32m     "execution_count": 19,[m
+      "metadata": {},[m
+      "output_type": "execute_result"[m
+     }[m
+[36m@@ -1484,15 +1483,13 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": 33,[m
+[32m+[m[32m   "execution_count": null,[m
+    "id": "ae00c7b9",[m
+    "metadata": {},[m
+    "outputs": [],[m
+    "source": [[m
+     "import pandas as pd\n",[m
+     "\n",[m
+[31m-    "# Asumo que df ya está cargado con columnas: usuario, producto, cantidad\n",[m
+[31m-    "\n",[m
+     "# Agrupar productos por usuario y sumar las cantidades\n",[m
+     "productos_por_usuario = (\n",[m
+     "    df.groupby(['usuario', 'producto'])['cantidad']\n",[m
+[36m@@ -1513,7 +1510,7 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": 34,[m
+[32m+[m[32m   "execution_count": 21,[m
+    "id": "e2a46372",[m
+    "metadata": {},[m
+    "outputs": [],[m
+[36m@@ -1524,24 +1521,24 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": 35,[m
+[32m+[m[32m   "execution_count": null,[m
+    "id": "7064fb27",[m
+    "metadata": {},[m
+    "outputs": [],[m
+    "source": [[m
+[31m-    "# Suponiendo base_enriquecida tiene la columna usuario\n",[m
+[32m+[m[32m    "# Crear base de datos con los productos\n",[m
+     "base_con_productos = base_enriquecida.merge(\n",[m
+     "    productos_ordenados[['usuario', 'top_3_productos']],\n",[m
+     "    on='usuario',\n",[m
+     "    how='left'\n",[m
+     ")\n",[m
+     "\n",[m
+[31m-    "# Ahora base_con_productos tiene la columna 'top_3_productos' con la predicción sencilla para cada usuario\n"[m
+[32m+[m[32m    "# Ahora base_con_productos tiene la columna 'top_3_productos' con la predicción para cada usuario\n"[m
+    ][m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": 36,[m
+[32m+[m[32m   "execution_count": 23,[m
+    "id": "cb380180",[m
+    "metadata": {},[m
+    "outputs": [[m
+[36m@@ -1572,7 +1569,7 @@[m
+   },[m
+   {[m
+    "cell_type": "code",[m
+[31m-   "execution_count": 39,[m
+[32m+[m[32m   "execution_count": null,[m
+    "id": "69470be5",[m
+    "metadata": {},[m
+    "outputs": [[m
+[36m@@ -1653,17 +1650,17 @@[m
+        "4  [PROD-3bea74, PROD-412320, PROD-66a332]  "[m
+       ][m
+      },[m
+[31m-     "execution_count": 39,[m
+[32m+[m[32m     "execution_count": 24,[m
+      "metadata": {},[m
+      "output_type": "execute_result"[m
+     }[m
+    ],[m
+    "source": [[m
+[31m-    "# Paso 1: Asegúrate de que ambas tablas tienen las columnas necesarias\n",[m
+[32m+[m[32m    "# Se toma la información estimada por el modelo y los productos top para cada usuario\n",[m
+     "base_ultima_compra[['usuario', 'fecha_proxima_compra']].head()\n",[m
+     "base_con_productos[['usuario', 'top_3_productos']].head()\n",[m
+     "\n",[m
+[31m-    "# Paso 2: Unir las tablas por la columna \"usuario\"\n",[m
+[32m+[m[32m    "# Unir las tablas por la columna \"usuario\"\n",[m
+     "base_final = base_ultima_compra.merge(\n",[m
+     "    base_con_productos[['usuario', 'top_3_productos']],\n",[m
+     "    on='usuario',\n",[m
+[36m@@ -1677,7 +1674,7 @@[m
+  ],[m
+  "metadata": {[m
+   "kernelspec": {[m
+[31m-   "display_name": "Python 3",[m
+[32m+[m[32m   "display_name": ".venv",[m
+    "language": "python",[m
+    "name": "python3"[m
+   },[m
